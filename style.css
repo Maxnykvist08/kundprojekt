@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes imgswap {
+    0% { background-image: url(img/murcht-shirt.jpeg);}
+    20%{background-image: url(img/murchhat.jpeg);}
+    40%{background-image: url(img/murchhuddy.jpeg);}
+    60%{background-image: url(img/murchkeps.jpeg);}
+    80%{background-image: url(img/murchmug.jpeg);}
+    100% { background-image: url(img/murcht-shirt.jpeg);}
+}
+a{
+    text-decoration: none;
+    color: #003366;
+}
+
+body{
+    background-color: #003366;
+    display: flex;
+    align-items:center ;
+    flex-direction: column;
+}
+header{
+    height: 10vh;
+    width: 85vw;
+    background-color: #ff3399;
+}
+nav{
+     height: 10vh;
+    width: 85vw;
+ margin: auto;
+ justify-content: space-evenly;
+  align-items: center;
+ display: flex;
+
+}
+.navigation{
+   
+    font-size: 4vh;
+    
+    
+}
+.mainnav{
+    width: 25vw;
+    background-color: #0099cc;
+    border-radius: 10vw;
+    padding: 10px;
+    text-align: center;
+}
+
+main{
+    background-color: #0099cc;
+    width: 80vw;
+    height: fit-content;
+}
+section{
+    width: 70vw;
+    height: 40vh;
+    border:2px solid #003366;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+    margin: auto;
+}
+#liveflöde{
+    width: 100%;
+    height: 80%;
+}
+
+.chat{
+    background-color: aquamarine;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.chat>textarea{
+    background-color: aquamarine;
+    text-align: right;
+}
+.snabbLinkMuerch{
+    animation-name: imgswap;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+   animation-iteration-count: infinite;
+   animation-direction:normal;
+   width: 100%;
+   height: 100%;
+    background-repeat: no-repeat;
+  background-size: 100%;
+  overflow: hidden;
+
+}
+aside{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90vw;
+    height: auto;
+    margin: auto;
+    background-color: #ff3399;
+}
+.vidios{
+    display: flex;
+    width: 40vw;
+    height: auto;
+    flex-direction: row;
+    margin: 5px;
+
+}
+.vidios>a>img{
+    width: 40vw;
+    height: auto;
+    
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color: #0099cc;
+}
+
+@media screen and (min-width:500px){
+
+    .liven{
+    height: 80vh;
+}
+.chat{
+    height: 20%;
+}
+.snabbLinkMuerch{
+    background:fixed;
+   
+    
+}
+aside{
+    margin-top: 10vh;
+    
+}
+.vidios{
+    width: 20vw;
+
+}
+.vidios>a>img{
+    width: 20vw;
+}
+}

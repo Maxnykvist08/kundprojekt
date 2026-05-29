@@ -1,0 +1,55 @@
+.container{
+   
+    
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    
+   
+}
+article{
+ margin-top:5vh ;
+ margin-bottom: 5vh;
+  border: 10px solid #ff3399;
+}
+.blogg-textruta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.blogg-bild{
+    width: 50vw;
+}
+
+
+@media screen and (min-width:500px)
+{
+.container{
+    flex-direction: row;
+justify-content: space-between;
+}
+}
+.blogg-blid{
+    width: 50%;
+}
+footer{
+background-color: #ff3399;
+
+width: 90vw;
+
+display: flex;
+justify-content: center;
+
+}
+footer > a{
+    width: 60vw;
+    
+    background-color: #0099cc;
+    border-radius: 10vw;
+    padding: 10px;
+    text-align: center;
+    margin: auto ;
+
+}

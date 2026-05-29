@@ -1,0 +1,67 @@
+.huvudbild{
+    width: 80vw;
+    height:auto;
+    margin: auto;
+}
+
+#rabatt{
+   font-size: 40px;
+    background:   #2A7B9B;
+    background:  linear-gradient(180deg,rgb(85, 220, 31) 0%, rgb(12, 147, 68) 44%, rgba(24, 39, 181, 1) 100%);
+    color: transparent;
+    background-clip: text;
+    text-align: center;
+     
+
+}
+.butikSlide{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.butikBilder{
+    margin: 20px;
+    border:10px solid  #ff3399;
+    height: fit-content;
+}
+.butikBilder> a> img{
+    margin: auto;
+    width: 40vw;
+    height: auto;
+}
+section{
+    border: none;
+}
+footer{
+background-color: #ff3399;
+
+width: 90vw;
+
+display: flex;
+justify-content: center;
+
+}
+footer > a{
+    width: 60vw;
+    
+    background-color: #0099cc;
+    border-radius: 10vw;
+    padding: 10px;
+    text-align: center;
+    margin: auto ;
+
+}
+@media screen and (min-width:500px){
+.butikBilder > a > img{
+    width: 20vw;
+}
+.butikBilder{
+    margin-top:80px;
+    
+}
+.butikSlide{
+height: fit-content;
+}
+}
